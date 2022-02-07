@@ -595,6 +595,7 @@ public class Couchbase3Client extends DB {
       for (LogDefer err : e.result().log().logs()) {
         String s = err.toString();
         logger.warn("transaction failed with exception :" + s);
+        System.err.println("transaction failed with exception :" + s);
       }
       return Status.ERROR;
     }
@@ -644,6 +645,7 @@ public class Couchbase3Client extends DB {
       for (LogDefer err : e.result().log().logs()) {
         String s = err.toString();
         logger.warn("transaction failed with exception :" + s);
+        System.err.println("transaction failed with exception :" + s);
       }
       return Status.ERROR;
     }
