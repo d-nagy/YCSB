@@ -705,7 +705,7 @@ public class TimeSeriesWorkload extends Workload {
 
   public boolean doInsertCollection(DB db, Object threadstate, String doInsertcollectoin,
                                     String scope,
-                                    long keynum) {
+                                    int keynum) {
     return false;
   }
 
